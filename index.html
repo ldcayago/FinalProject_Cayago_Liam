@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKBREW CAFE | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .btn-explore {
+  background-color: #6f4e37;   /* coffee brown */
+  color: #fff;
+  border-radius: 999px;        /* pill shape */
+  padding: 18px 70px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+.btn-explore:hover {
+  background-color: #ffc107;   /* golden hover */
+  color: #000;
+  transform: scale(1.08);
+}
+
+  /* Navbar brand styling */
+  .navbar-brand {
+    border: 2px solid #fff;       /* white border around brand text */
+    padding: 5px 12px;            /* spacing inside border */
+    border-radius: 6px;           /* rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+
+  .navbar-brand:hover {
+    transform: scale(1.05);       /* slight zoom */
+    box-shadow: 0 4px 12px rgba(255,255,255,0.4); /* glowing shadow */
+    border-color: #ffc107;        /* yellow border highlight */
+    color: #ffc107;               /* text changes to yellow */
+  }
+
+  /* Navbar links */
+  .navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #ffc107;          /* highlight text */
+    transform: scale(1.1);   /* zoom in slightly */
+  }
+
+  /* Animated underline effect */
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #ffc107;
+    transition: width 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    width: 100%; /* underline expands on hover */
+  }
+</style>
+
+</head>
+
+  <style>
+    
+    /* Navbar brand styling */
+    
+.navbar-brand {
+  border: 2px solid #fff;       /* white border around the brand text */
+  padding: 5px 12px;            /* spacing inside the border */
+  border-radius: 6px;           /* rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover effect for brand */
+.navbar-brand:hover {
+  transform: scale(1.05);       /* slight zoom */
+  box-shadow: 0 4px 12px rgba(255,255,255,0.4); /* glowing shadow */
+  border-color: #ffc107;        /* changes border to yellow highlight */
+  color: #ffc107;               /* text changes to yellow */
+}
+
+  /* Product card images */
+  .product-card img {
+    height: 250px;          /* same height for all product images */
+    object-fit: cover;      /* crops to fit without distortion */
+    border-radius: 8px;     /* smooth corners */
+    border: 2px solid #ddd; /* light border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth animation */
+  }
+
+  /* Hover effect */
+  .product-card img:hover {
+    transform: scale(1.05);        /* zooms in slightly */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3); /* adds shadow glow */
+    border-color: #333;            /* darkens border on hover */
+  }
+
+  /* Carousel interior images */
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .carousel-item img:hover {
+    transform: scale(1.02);        /* subtle zoom */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  }
+</style>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">BLACKBREW CAFE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<header class="hero-section d-flex align-items-center justify-content-center text-center">
+  <div>
+    <h1 class="text-white display-4 fw-bold">BLACKBREW CAFE</h1>
+    <p class="text-white fs-4">Where every cup tells a story.</p>
+    <a href="products.html" class="btn-explore mt-3">Explore Menu</a>
+
+
+  </div>
+</header>
+
+<!-- BEST SELLERS -->
+<section class="container py-5">
+  <h2 class="text-center mb-4 fw-bold">Best Sellers</h2>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="images/coffee1.jpg" class="card-img-top" alt="">
+        <div class="card-body text-center">
+          <h5 class="card-title">Caramel Latte</h5>
+          <p class="card-text">Smooth espresso with caramel sweetness.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card product-card">
+        <img src="images/matcha-latte.jpg" class="card-img-top" alt="">
+        <div class="card-body text-center">
+          <h5 class="card-title">Matcha Latte</h5>
+          <p class="card-text">Smooth green tea blended with milk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+  <div class="card product-card h-100">
+    <img src="images/pastry1.jpg" class="card-img-top" alt="Butter Croissant">
+    <div class="card-body text-center">
+      <h5 class="card-title">Butter Croissant</h5>
+      <p class="card-text">Perfect pastry to pair with your drink.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- GALLERY / INTERIOR DESIGN SLIDER -->
+<section class="container py-5">
+  <h2 class="text-center fw-bold mb-4">Our Cafe Interior</h2>
+
+  <div id="cafeGallery" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Image 1 -->
+      <div class="carousel-item active">
+        <img src="images/interior1.jpg" class="d-block w-100 rounded shadow" alt="Cafe Interior 1">
+      </div>
+
+      <!-- Image 2 -->
+      <div class="carousel-item">
+        <img src="images/interior2.jpg" class="d-block w-100 rounded shadow" alt="Cafe Interior 2">
+      </div>
+
+      <!-- Image 3 -->
+      <div class="carousel-item">
+        <img src="images/interior3.jpg" class="d-block w-100 rounded shadow" alt="Cafe Interior 3">
+      </div>
+
+      <!-- Add more images if needed -->
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cafeGallery" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#cafeGallery" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center bg-dark text-light py-3">
+  <p class="m-0">© 2025 BLACKBREW CAFE. All Rights Reserved.</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Automatic looping gallery
+  const gallery = document.querySelector('#cafeGallery');
+  const bsCarousel = new bootstrap.Carousel(gallery, {
+    interval: 2500,   // auto-slide every 2.5 seconds
+    ride: 'carousel',
+    pause: false,     // keeps sliding even when hovered
+    wrap: true        // infinite loop
+  });
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
